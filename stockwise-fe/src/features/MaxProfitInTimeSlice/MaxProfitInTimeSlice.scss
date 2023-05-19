@@ -1,0 +1,33 @@
+.max-profit-in-time-slice-container {
+    display: flex;
+		align-items: center;
+    justify-content: space-between;
+
+		.form, .result {
+			flex-basis: 49%;
+			height: 100vh;
+			margin-top: 50px;
+		}
+		
+    .form {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 30px;
+    }
+
+		.result {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		@media screen and (max-width: 768px) {
+			& {
+					flex-direction: column;
+					max-width: 100%;
+					margin: 50px 20px;
+			}
+		}
+	}

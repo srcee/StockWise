@@ -1,0 +1,127 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,500,700');
+
+:root {
+  /* 
+   * Color palette
+   */
+  --primary-color: #d4af37;
+
+  /* 
+   * Typography
+   */
+  --typography--primary--fontName: 'Lato';
+  --typography--primary--fontWeight: 400;
+  --typography--primary--fontStyle: normal;
+
+  /* Figure */
+  --typography--figure--fontSize: 80px;
+  --typography--figure--lineHeight: 88px;
+  --typography--figure--fontWeight: 300;
+  --typography--figure--letterSpacing: -0.6px;
+  /* Figure - Mobile*/
+  --typography--figure--fontSize--mobile: 64px;
+  --typography--figure--lineHeight--mobile: 72px;
+
+  /* Hero */
+  --typography--hero--fontSize: 64px;
+  --typography--hero--lineHeight: 72px;
+  --typography--hero--fontWeight: 400;
+  --typography--hero--letterSpacing: -0.3px;
+  /* Hero - Mobile*/
+  --typography--hero--fontSize--mobile: 56px;
+  --typography--hero--lineHeight--mobile: 64px;
+
+  /* Heading */
+  --typography--heading--fontWeight: 400;
+  --typography--heading--letterSpacing: 0;
+  /* Heading 1 */
+  --typography--h1--fontSize: 48px;
+  --typography--h1--lineHeight: 56px;
+  /* Heading 1 - Mobile*/
+  --typography--h1--fontSize--mobile: 40px;
+  --typography--h1--lineHeight--mobile: 48px;
+  /* Heading 2 */
+  --typography--h2--fontSize: 40px;
+  --typography--h2--lineHeight: 48px;
+  /* Heading 2 - Mobile*/
+  --typography--h2--fontSize--mobile: 32px;
+  --typography--h2--lineHeight--mobile: 40px;
+  /* Heading 3 */
+  --typography--h3--fontSize: 32px;
+  --typography--h3--lineHeight: 40px;
+  /* Heading 3 - Mobile*/
+  --typography--h3--fontSize--mobile: 24px;
+  --typography--h3--lineHeight--mobile: 32px;
+  /* Heading 4 */
+  --typography--h4--fontSize: 24px;
+  --typography--h4--lineHeight: 32px;
+  /* Heading 4 - Mobile*/
+  --typography--h4--fontSize--mobile: 20px;
+  --typography--h4--lineHeight--mobile: 32px;
+  /* Heading 5 */
+  --typography--h5--fontSize: 20px;
+  --typography--h5--lineHeight: 28px;
+  /* Heading 5 - Mobile*/
+  --typography--h5--fontSize--mobile: 16px;
+  --typography--h5--lineHeight--mobile: 24px;
+
+  /* Subtitle */
+  --typography--subtitle--fontSize: 16px;
+  --typography--subtitle--lineHeight: 24px;
+  --typography--subtitle--fontWeight: 500;
+  --typography--subtitle--letterSpacing: 0;
+
+  /* Title - small */
+  --typography--title-small--fontSize: 14px;
+  --typography--title-small--lineHeight: 24px;
+  --typography--title-small--fontWeight: 500;
+  --typography--title-small--letterSpacing: 0;
+
+  /* Body */
+  --typography--body--fontWeight: 400;
+  --typography--body--letterSpacing: 0.1px;
+  /* Body - base */
+  --typography--body-base--fontSize: 16px;
+  --typography--body-base--lineHeight: 24px;
+  /* Body - large */
+  --typography--body-large--fontSize: 20px;
+  --typography--body-large--lineHeight: 32px;
+  /* Body - medium */
+  --typography--body-medium--fontSize: 14px;
+  --typography--body-medium--lineHeight: 24px;
+  /* Body - small */
+  --typography--body-small--fontSize: 12px;
+  --typography--body-small--lineHeight: 16px;
+
+  /* Button */
+  --typography--button--fontSize: 14px;
+  --typography--button--lineHeight: 24px;
+  --typography--button--fontWeight: 500;
+  --typography--button--letterSpacing: 0.7px;
+  --typography--button--textTransform: uppercase;
+  /* Button - small */
+  --typography--button-small--fontSize: 12px;
+  --typography--button-small--lineHeight: 16px;
+  --typography--button-small--letterSpacing: 0.6px;
+
+  /* Caption */
+  --typography--caption--fontSize: 12px;
+  --typography--caption--lineHeight: 16px;
+  --typography--caption--fontWeight: 400;
+  --typography--caption--letterSpacing: 0.2px;
+
+  /* Link */
+  --typography--link--fontSize: 14px;
+  --typography--link--lineHeight: 16px;
+  --typography--link--fontWeight: 500;
+  --typography--link--letterSpacing: 0.2px;
+  /* Link - small */
+  --typography--link-small--fontSize: 12px;
+  --typography--link-small--lineHeight: 16px;
+
+  /* Tag */
+  --typography--tag--fontSize: 10px;
+  --typography--tag--lineHeight: 16px;
+  --typography--tag--fontWeight: 500;
+  --typography--tag--letterSpacing: 0.5px;
+}
