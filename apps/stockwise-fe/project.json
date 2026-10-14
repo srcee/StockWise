@@ -1,0 +1,16 @@
+{
+  "name": "stockwise-fe",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/stockwise-fe/src",
+  "tags": ["type:app", "platform:web"],
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "inputs": ["default", "^production"],
+      "options": { "command": "tsc -p tsconfig.app.json --noEmit", "cwd": "apps/stockwise-fe" }
+    },
+    "build": { "dependsOn": ["^build", "typecheck"] }
+  }
+}
