@@ -12,6 +12,10 @@ yarn-error.log
 .env
 *.js.map
 
+# Ignore Nx cache and generated output
+.nx/
+/coverage/
+
 # Ignore IDE and editor files
 .vscode/
 .idea/

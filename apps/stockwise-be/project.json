@@ -1,0 +1,52 @@
+{
+  "name": "stockwise-be",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/stockwise-be/src",
+  "tags": ["type:app", "platform:node"],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "cache": true,
+      "outputs": ["{workspaceRoot}/dist/apps/stockwise-be"],
+      "defaultConfiguration": "production",
+      "options": {"command": "webpack-cli build", "cwd": "apps/stockwise-be"},
+      "configurations": {
+        "development": {"args": ["--mode=development"]},
+        "production": {"args": ["--mode=production"]}
+      }
+    },
+    "db:start": {
+      "executor": "nx:run-commands",
+      "cache": false,
+      "options": {"command": "docker compose up -d mongodb"}
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["db:start", "build"],
+      "options": {"buildTarget": "stockwise-be:build", "runBuildTargetDependencies": false},
+      "configurations": {
+        "development": {"buildTarget": "stockwise-be:build:development"},
+        "debug": {"buildTarget": "stockwise-be:build:development", "inspect": "inspect"},
+        "production": {"buildTarget": "stockwise-be:build:production"}
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "cache": true,
+      "outputs": ["{workspaceRoot}/coverage/apps/stockwise-be"],
+      "options": {"jestConfig": "apps/stockwise-be/jest.config.ts", "passWithNoTests": true},
+      "configurations": {
+        "watch": {"watch": true},
+        "coverage": {"coverage": true},
+        "debug": {"runInBand": true}
+      }
+    },
+    "test-e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/stockwise-be-e2e"],
+      "options": {"jestConfig": "apps/stockwise-be/jest.e2e.config.ts"}
+    }
+  }
+}
